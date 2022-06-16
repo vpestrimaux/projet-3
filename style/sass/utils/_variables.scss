@@ -2,3 +2,5 @@ $color_primary: #9356DC;
 $color_secondary: #FF79DA;
 $color_tertiary: #99E2D0;
 $color_background: #f2f2f2; 
+$color_linear_background: linear-gradient(to left top, $color_primary, $color_secondary);
+$box-shadow: 0px 0px 10px 4px rgb(224, 220, 220);
