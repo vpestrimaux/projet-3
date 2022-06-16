@@ -1,0 +1,22 @@
+.container__search{           
+    & .search__tittle, .btn__search{        
+        padding: 10px 50px;
+        text-align: center;   
+        background-color: $color_background; 
+
+}      
+    & .btn__search__restaurant{
+        border-radius: 25px;
+        height: 50px;
+        text-align: center;
+        width: 250px;
+        color: white;
+        background-color:#9356DC;
+        border: none;
+        cursor: pointer;
+        font-size: 1.2em;
+    }
+    .btn__search{
+        padding-bottom: 50px;
+    }
+}
