@@ -1,5 +1,6 @@
+
 *{
-    font-family: roboto;
+    font-family: 'Roboto', sans-serif;    
     box-sizing: border-box;
 }
 
@@ -7,12 +8,20 @@ body{
     margin: 0;
 }
 
-title, .logo{
-    font-family: shrikhand;
-    
-}
-
 h1{
     font-size: 1.6em;
+    font-weight: bold;
 } 
 
+.logo{
+    font-family: 'Shrikhand', cursive;
+}
+
+h2, h3{
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: black
+}
