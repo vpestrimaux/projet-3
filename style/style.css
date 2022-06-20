@@ -1,4 +1,6 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap");
 /* liste variables */
 /* liste mixins */
 * {
@@ -11,7 +13,7 @@ body {
 }
 
 h1 {
-  font-size: 1.6em;
+  font-size: 1.4em;
   font-weight: bold;
 }
 
@@ -20,7 +22,7 @@ h1 {
 }
 
 h2, h3 {
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 a {
@@ -30,6 +32,8 @@ a {
 
 header {
   width: 100%;
+  display: flex;
+  align-items: center;
 }
 header .logo__ohmyfood {
   width: 100%;
@@ -37,6 +41,23 @@ header .logo__ohmyfood {
   text-align: center;
 }
 header .logo__ohmyfood .logo {
+  width: 150px;
+}
+
+.header__menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.header__menu i {
+  padding-left: 20px;
+}
+.header__menu .logo__ohmyfood__menu {
+  width: 100%;
+  padding: 20px 25px 20px 0px;
+  text-align: center;
+}
+.header__menu .logo__ohmyfood__menu .logo {
   width: 150px;
 }
 
@@ -61,11 +82,51 @@ header .logo__ohmyfood .logo {
   font-weight: bold;
 }
 
+/* footer */
+.container__footer {
+  background-color: rgba(46, 44, 44, 0.92);
+  color: white;
+  padding-bottom: 20px;
+}
+.container__footer .titre__footer h2 {
+  font-size: 15px;
+  padding: 10px;
+  font-family: "Shrikhand";
+  font-weight: 400;
+  margin: 0;
+}
+.container__footer .ohmyfood__footer {
+  display: flex;
+  flex-direction: column;
+}
+.container__footer .ohmyfood__footer a {
+  padding: 5px 0 5px 10px;
+  font-size: 0.9em;
+  color: white;
+}
+.container__footer .ohmyfood__footer .footer__list {
+  display: flex;
+  flex-direction: row;
+}
+.container__footer .ohmyfood__footer .footer__list i {
+  display: flex;
+  align-items: center;
+  padding-right: 10px;
+  font-size: 0.9em;
+  color: white;
+}
+.container__footer .ohmyfood__footer .footer__list p {
+  margin: 0;
+  font-size: 0.9em;
+  color: white;
+}
+
 /* barre de recherche */
 .container__search .search__tittle, .container__search .btn__search {
   padding: 10px 50px;
   text-align: center;
   background-color: #f2f2f2;
+  font-size: 0.9em;
 }
 .container__search .btn__search__restaurant {
   border-radius: 25px;

@@ -1,0 +1,39 @@
+
+
+/* footer */
+
+.container__footer{
+    background-color: rgb(46 44 44 / 92%);
+    color: white;
+    padding-bottom: 20px;
+    .titre__footer h2{        
+        font-size: 15px;
+        padding: 10px;
+        font-family: "Shrikhand";
+        font-weight: 400;   
+        margin: 0; 
+        
+    }
+    .ohmyfood__footer{
+        display: flex;
+        flex-direction: column;
+        a{
+            padding: 5px 0 5px 10px;
+            @include font-size-color-footer;
+        }
+        .footer__list{
+            display: flex;
+            flex-direction: row;   
+            i{
+                display: flex;
+                align-items: center;
+                padding-right: 10px;
+                @include font-size-color-footer;
+            }    
+            p{
+                margin: 0;
+                @include font-size-color-footer; 
+            }               
+        }
+    }
+}

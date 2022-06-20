@@ -3,15 +3,35 @@
 
 header{    
     width: 100%;    
-    & .logo__ohmyfood{
+    display: flex;
+    align-items: center;
+    .logo__ohmyfood{
         width: 100%;
         padding: 20px;  
         text-align: center;      
-        & .logo {
+        .logo {
             width: 150px;
             
 
 
+        }
+    
+    }
+}
+
+.header__menu{    
+    width: 100%;    
+    display: flex;
+    align-items: center;
+    i{
+        padding-left: 20px;
+    }
+    .logo__ohmyfood__menu{
+        width: 100%;
+        padding: 20px 25px 20px 0px;  
+        text-align: center;      
+        .logo {
+            width: 150px;
         }
     
     }
