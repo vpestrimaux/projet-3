@@ -3,22 +3,22 @@
 
 .container__search{   
     form {
-    display: flex;
+    @include flex-box-centre;
     text-align: center;
-    width: 100%;
-    justify-content: center;
+    width: 100%;    
     background-color: #d9d9d9;
-    padding-left: 40px;
+    padding-left: 70px;
     height: 40px;
-    box-shadow: 0px -3px 10px 0px rgba(153,153,153,0.75);
+    box-shadow: 0px -2px 5px 0px rgba(153,153,153,1);
     }
     .icon__search, .input__search{
-        padding: 10px 5px 10px 5px;    
+        padding: 10px 5px 10px 5px;
     }       
     .input__search input{
         border: none;
         background-color: #d9d9d9;
         height: 20px;        
         font-weight: bold;
+        font-size: 1em; 
     }
 }

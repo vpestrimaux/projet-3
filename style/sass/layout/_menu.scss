@@ -1,0 +1,168 @@
+
+
+/* ------------------------Restaurants menus-------------------------- */
+/* ------------------------la palette du gout------------------------- */
+
+.image__menu{
+    img{
+        @include image-menu;
+    }    
+}
+
+.cointainer__menu__main{
+    @include container-menu;
+    .titre__menu{
+        padding: 10px 10px 10px 0px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1{
+            margin: 0;
+            font-family: "Shrikhand";
+            font-weight: 400;
+            font-size: 1.7em;
+        }        
+        .fa-regular{
+            @include heart-menu;
+            &:active{
+                opacity: 0;
+                color: transparent;
+            }               
+        }
+        .fa-solid{
+            color: transparent;
+            background-clip: text;
+            -webkit-background-clip: text;                
+            opacity: 0;    
+            @include heart-menu;            
+            background-image: linear-gradient(to bottom, $color_primary, $color_secondary 2%);           
+            &:active{  
+                bottom: 35px;                   
+                opacity: 1; 
+                transition: 800ms;             
+                
+            }                       
+        }       
+    }
+    .Bloc__theme{
+        padding-bottom: 30px;         
+        .titre__theme{               
+            h3{
+                border-bottom: 3px solid $color_tertiary;         
+                width: 40px; 
+                font-size: 1em;   
+                color: #6b6a6a; 
+                padding-bottom: 5px;                   
+            }
+        } 
+        .one{
+            animation-delay: 200ms;
+        }     
+        .box__menu{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 350px;
+            height: 80px;
+            min-width: 235px;
+            border-radius: 20px;
+            background-color: white;
+            position: relative;
+            margin-bottom: 20px;
+            box-shadow: $box-shadow;            
+            overflow: hidden;
+            cursor: pointer; 
+            &:hover{
+                @include scale-box;
+            }
+            &:hover h4{                
+                white-space: nowrap;
+            }            
+            &:hover .price{                
+                transition: all 1.5s; 
+                margin-right: 60px;
+            }
+            &:hover .text__box__menu .slide__menu{                
+                transition: all 2s;                    
+                text-align: right;                
+                opacity: 1;
+                right: 0px;                
+            }
+            &:hover .text__box__menu .slide__menu i{
+                transform: rotate(1turn);
+            }
+            h4{
+                padding: 15px 10px 5px 15px;  
+                margin: 0; 
+                font-size: 1.1em;  
+                @include texte__hidden;         
+            }
+            .text__box__menu{
+                display: flex;
+                justify-content: space-between;
+                p:first-child {                    
+                    @include texte__hidden;
+                }                
+                .price{
+                    padding-right: 15px;
+                }
+                p{
+                    margin: 0;
+                    padding: 0px 10px 5px 15px;   
+                    font-size: 0.9em;                                    
+                    
+                } 
+                .slide__menu{
+                    flex-grow: 0; 
+                    font-size: 24px;
+                    font-weight: bold;
+                    width: 60px;
+                    height: 80px;
+                    background-color: #99E2D0; 
+                    opacity: 0; 
+                    color: white;
+                    border-top-right-radius: 20px;
+                    border-bottom-right-radius: 20px;
+                    position: absolute;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    top: 0;                    
+                    right: -70px;    
+                    i{
+                        
+                        border-radius: 15px;
+                        font-size: 0.6em;
+                        padding: 3px 4px;
+                        background-color: white;
+                        color: $color_tertiary; 
+                        transition: all 2s ease-in-out;
+                    }
+                }                   
+            }            
+        }
+    }
+    .btn__search{
+        @include flex-box-centre;
+        padding: 10px 0 40px 0;
+        .btn__search__restaurant{
+        border-radius: 30px;
+        height: 60px;
+        text-align: center;
+        width: 100%;
+        max-width: 230px;
+        min-width: 130px ;
+        color: white;
+        background: linear-gradient(to left top, $color_primary, $color_secondary);
+        border: none;
+        cursor: pointer;
+        font-size: 1.2em;
+        box-shadow: 0px 2px 5px 2px rgb(184, 182, 182);   
+            &:hover{
+            @include scale-box;
+            opacity: 0.90;
+            box-shadow: 0px 0px 3px 3px rgba(43, 39, 39, 0.726);
+            }            
+        }
+    }
+}
