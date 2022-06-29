@@ -3,6 +3,22 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap");
 /* liste variables */
 /* liste mixins */
+@-webkit-keyframes menu__appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes menu__appear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 * {
   font-family: "Roboto", sans-serif;
   box-sizing: border-box;
@@ -311,7 +327,7 @@ header .logo__ohmyfood .logo {
   position: relative;
   bottom: 40px;
   padding: 10px;
-  margin-bottom: 40px;
+  margin-bottom: -40px;
 }
 .cointainer__menu__main .titre__menu {
   padding: 10px 10px 10px 0px;
@@ -362,8 +378,76 @@ header .logo__ohmyfood .logo {
   padding-bottom: 5px;
 }
 .cointainer__menu__main .Bloc__theme .one {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
+  -webkit-animation: menu__appear;
+          animation: menu__appear;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: cubic-bezier(0.18, 0.56, 0.93, 1);
+          animation-timing-function: cubic-bezier(0.18, 0.56, 0.93, 1);
+}
+.cointainer__menu__main .Bloc__theme .two {
+  -webkit-animation: menu__appear;
+          animation: menu__appear;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.14, -0.39, 0.83, 1.23);
+          animation-timing-function: cubic-bezier(0.14, -0.39, 0.83, 1.23);
+}
+.cointainer__menu__main .Bloc__theme .three {
+  -webkit-animation: menu__appear;
+          animation: menu__appear;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(0.14, -0.39, 0.83, 1.33);
+          animation-timing-function: cubic-bezier(0.14, -0.39, 0.83, 1.33);
+}
+.cointainer__menu__main .Bloc__theme .four {
+  -webkit-animation: menu__appear;
+          animation: menu__appear;
+  -webkit-animation-duration: 2.5s;
+          animation-duration: 2.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.18, 0.56, 0.93, 1);
+          animation-timing-function: cubic-bezier(0.18, 0.56, 0.93, 1);
+}
+.cointainer__menu__main .Bloc__theme .five {
+  -webkit-animation: menu__appear;
+          animation: menu__appear;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: cubic-bezier(0.14, -0.39, 0.83, 1.23);
+          animation-timing-function: cubic-bezier(0.14, -0.39, 0.83, 1.23);
+}
+.cointainer__menu__main .Bloc__theme .six {
+  -webkit-animation: menu__appear;
+          animation: menu__appear;
+  -webkit-animation-duration: 3.5s;
+          animation-duration: 3.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.14, -0.39, 0.83, 1.33);
+          animation-timing-function: cubic-bezier(0.14, -0.39, 0.83, 1.33);
+}
+.cointainer__menu__main .Bloc__theme .seven {
+  -webkit-animation: menu__appear;
+          animation: menu__appear;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: cubic-bezier(0.18, 0.56, 0.93, 1);
+          animation-timing-function: cubic-bezier(0.18, 0.56, 0.93, 1);
+}
+.cointainer__menu__main .Bloc__theme .eight {
+  -webkit-animation: menu__appear;
+          animation: menu__appear;
+  -webkit-animation-duration: 4.5s;
+          animation-duration: 4.5s;
+  -webkit-animation-timing-function: cubic-bezier(0.14, -0.39, 0.83, 1.23);
+          animation-timing-function: cubic-bezier(0.14, -0.39, 0.83, 1.23);
+}
+.cointainer__menu__main .Bloc__theme .nine {
+  -webkit-animation: menu__appear;
+          animation: menu__appear;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-timing-function: cubic-bezier(0.14, -0.39, 0.83, 1.33);
+          animation-timing-function: cubic-bezier(0.14, -0.39, 0.83, 1.33);
 }
 .cointainer__menu__main .Bloc__theme .box__menu {
   display: flex;

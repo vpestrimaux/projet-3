@@ -43,9 +43,9 @@
                 
             }                       
         }       
-    }
+    }    
     .Bloc__theme{
-        padding-bottom: 30px;         
+        padding-bottom: 30px;             
         .titre__theme{               
             h3{
                 border-bottom: 3px solid $color_tertiary;         
@@ -55,9 +55,52 @@
                 padding-bottom: 5px;                   
             }
         } 
-        .one{
-            animation-delay: 200ms;
-        }     
+        .one{            
+            animation: menu__appear;            
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(.18,.56,.93,1);
+            
+        } 
+        .two{            
+            animation: menu__appear;            
+            animation-duration: 1.5s;
+            animation-timing-function: cubic-bezier(.14,-0.39,.83,1.23);
+        }
+        .three{            
+            animation: menu__appear;            
+            animation-duration: 2s;
+            animation-timing-function: cubic-bezier(.14,-0.39,.83,1.33);
+        }
+        .four{                     
+            animation: menu__appear;            
+            animation-duration: 2.5s;
+            animation-timing-function: cubic-bezier(.18,.56,.93,1);
+        } 
+        .five{            
+            animation: menu__appear;            
+            animation-duration: 3s;
+            animation-timing-function: cubic-bezier(.14,-0.39,.83,1.23);
+        }
+        .six{            
+            animation: menu__appear;            
+            animation-duration: 3.5s;
+            animation-timing-function: cubic-bezier(.14,-0.39,.83,1.33);
+        } 
+        .seven{            
+            animation: menu__appear;            
+            animation-duration: 4s;
+            animation-timing-function: cubic-bezier(.18,.56,.93,1);
+        } 
+        .eight{            
+            animation: menu__appear;            
+            animation-duration: 4.5s;
+            animation-timing-function: cubic-bezier(.14,-0.39,.83,1.23);
+        }
+        .nine{            
+            animation: menu__appear;            
+            animation-duration: 5s;
+            animation-timing-function: cubic-bezier(.14,-0.39,.83,1.33);
+        }    
         .box__menu{
             display: flex;
             flex-direction: column;
@@ -72,6 +115,7 @@
             box-shadow: $box-shadow;            
             overflow: hidden;
             cursor: pointer; 
+            
             &:hover{
                 @include scale-box;
             }
