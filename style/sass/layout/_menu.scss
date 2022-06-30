@@ -36,11 +36,10 @@
             opacity: 0;    
             @include heart-menu;            
             background-image: linear-gradient(to bottom, $color_primary, $color_secondary 2%);           
-            &:active{  
+            &:hover{  
                 bottom: 35px;                   
                 opacity: 1; 
-                transition: 800ms;             
-                
+                transition: 4s;                
             }                       
         }       
     }    
@@ -56,20 +55,20 @@
             }
         } 
         .one{            
-            animation: menu__appear;            
-            animation-duration: 1s;
-            animation-timing-function: cubic-bezier(.18,.56,.93,1);
+            animation-name: menu__appear;            
+            animation-duration: 0.8s;
+            animation-timing-function: ease-in-out;
             
         } 
         .two{            
             animation: menu__appear;            
-            animation-duration: 1.5s;
-            animation-timing-function: cubic-bezier(.14,-0.39,.83,1.23);
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
         }
         .three{            
             animation: menu__appear;            
-            animation-duration: 2s;
-            animation-timing-function: cubic-bezier(.14,-0.39,.83,1.33);
+            animation-duration: 1.3s;
+            animation-timing-function: ease-in-out;
         }
         .four{                     
             animation: menu__appear;            
@@ -114,8 +113,7 @@
             margin-bottom: 20px;
             box-shadow: $box-shadow;            
             overflow: hidden;
-            cursor: pointer; 
-            
+            cursor: pointer;
             &:hover{
                 @include scale-box;
             }
