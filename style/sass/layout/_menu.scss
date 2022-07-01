@@ -6,11 +6,13 @@
 .image__menu{
     img{
         @include image-menu;
+        min-width: 260px;
     }    
 }
 
 .cointainer__menu__main{
     @include container-menu;
+    min-width: 260px;
     .titre__menu{
         padding: 10px 10px 10px 0px;
         display: flex;
@@ -35,11 +37,11 @@
             -webkit-background-clip: text;                
             opacity: 0;    
             @include heart-menu;            
-            background-image: linear-gradient(to bottom, $color_primary, $color_secondary 2%);           
+            background-image: linear-gradient(to bottom, $color_primary, $color_secondary 2.6%);           
             &:hover{  
                 bottom: 35px;                   
                 opacity: 1; 
-                transition: 4s;                
+                transition: 1s;                
             }                       
         }       
     }    
@@ -55,56 +57,60 @@
             }
         } 
         .one{            
-            animation-name: menu__appear;            
-            animation-duration: 0.8s;
-            animation-timing-function: ease-in-out;
+            animation: menu__appear;            
+            animation-duration: 1s;
+            animation-timing-function: cubic-bezier(.18,.56,.93,1.13);
             
         } 
         .two{            
             animation: menu__appear;            
-            animation-duration: 1s;
-            animation-timing-function: ease-in-out;
+            animation-duration: 1.2s;
+            animation-timing-function: cubic-bezier(.14,-0.39,.83,1.23);
         }
         .three{            
-            animation: menu__appear;            
-            animation-duration: 1.3s;
-            animation-timing-function: ease-in-out;
+            animation: menu__appear;
+            animation-duration: 1.4s;
+            animation-timing-function: cubic-bezier(.14,-0.39,.83,1.33);
+        }
+        .three_bis{            
+            animation: menu__appear;
+            animation-duration: 1.5s;
+            animation-timing-function: cubic-bezier(.14,-0.39,.83,1.33);
         }
         .four{                     
             animation: menu__appear;            
-            animation-duration: 2.5s;
-            animation-timing-function: cubic-bezier(.18,.56,.93,1);
+            animation-duration: 1.6s;
+            animation-timing-function: cubic-bezier(.18,.56,.93,1.13);
         } 
         .five{            
             animation: menu__appear;            
-            animation-duration: 3s;
+            animation-duration: 1.8s;
             animation-timing-function: cubic-bezier(.14,-0.39,.83,1.23);
         }
         .six{            
             animation: menu__appear;            
-            animation-duration: 3.5s;
+            animation-duration: 2s;
             animation-timing-function: cubic-bezier(.14,-0.39,.83,1.33);
         } 
         .seven{            
             animation: menu__appear;            
-            animation-duration: 4s;
-            animation-timing-function: cubic-bezier(.18,.56,.93,1);
+            animation-duration: 2.2s;
+            animation-timing-function: cubic-bezier(.18,.56,.93,1.13);
         } 
         .eight{            
             animation: menu__appear;            
-            animation-duration: 4.5s;
+            animation-duration: 2.4s;
             animation-timing-function: cubic-bezier(.14,-0.39,.83,1.23);
         }
         .nine{            
             animation: menu__appear;            
-            animation-duration: 5s;
+            animation-duration: 2.6s;
             animation-timing-function: cubic-bezier(.14,-0.39,.83,1.33);
         }    
         .box__menu{
             display: flex;
             flex-direction: column;
-            width: 100%;
-            max-width: 350px;
+            width: 99%;
             height: 80px;
             min-width: 235px;
             border-radius: 20px;
@@ -142,7 +148,7 @@
             .text__box__menu{
                 display: flex;
                 justify-content: space-between;
-                p:first-child {                    
+                p:first-child{                    
                     @include texte__hidden;
                 }                
                 .price{
@@ -170,15 +176,14 @@
                     justify-content: center;
                     align-items: center;
                     top: 0;                    
-                    right: -70px;    
+                    right: -60px;    
                     i{
-                        
                         border-radius: 15px;
                         font-size: 0.6em;
                         padding: 3px 4px;
                         background-color: white;
                         color: $color_tertiary; 
-                        transition: all 2s ease-in-out;
+                        transition: all 1s ease-in-out;
                     }
                 }                   
             }            
@@ -203,8 +208,26 @@
             &:hover{
             @include scale-box;
             opacity: 0.90;
-            box-shadow: 0px 0px 3px 3px rgba(43, 39, 39, 0.726);
+            box-shadow: 0px 0px 10px 3px rgba(46, 45, 45, 0.726);
             }            
         }
     }
 }
+
+
+
+
+/* média queries */
+/* tablette / desktop page menu*/
+
+@media  (min-width: 768px){
+    .section__theme{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .Bloc__theme{
+            margin-right: 20px;  
+        }        
+    }
+}
+

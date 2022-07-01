@@ -5,6 +5,7 @@ header{
     width: 100%;    
     display: flex;
     align-items: center;
+    min-width: 260px;
     .logo__ohmyfood{
         width: 100%;
         padding: 10px;  
@@ -36,3 +37,4 @@ header{
     
     }
 }
+

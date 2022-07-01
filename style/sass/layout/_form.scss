@@ -1,7 +1,8 @@
 
 /* barre de recherche page principale */
 
-.container__search{   
+.container__search{  
+    min-width: 260px;
     form {
     @include flex-box-centre;
     text-align: center;

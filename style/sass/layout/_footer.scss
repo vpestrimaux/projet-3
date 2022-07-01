@@ -6,8 +6,9 @@
     background-color: rgb(46 44 44 / 92%);
     color: white;
     padding: 15px 15px 20px 15px;
+    min-width: 260px;
     .titre__footer h2{        
-        font-size: 15px;
+        font-size: 1.2em;
         padding: 10px;
         font-family: "Shrikhand";
         font-weight: 400;   
@@ -37,6 +38,14 @@
         }
         #size{
             font-size: 0.8em;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .container__footer{
+        .titre__footer h2{
+            font-size: 1.8em;
         }
     }
 }
