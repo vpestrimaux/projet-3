@@ -226,7 +226,10 @@
         flex-wrap: wrap;
         justify-content: space-between;
         .Bloc__theme{
-            margin-right: 20px;  
+            margin-right: 20px; 
+            .box__menu{
+                width: 350px;
+            } 
         }        
     }
 }

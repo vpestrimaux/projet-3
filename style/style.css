@@ -630,6 +630,9 @@ header .logo__ohmyfood .logo {
   .section__theme .Bloc__theme {
     margin-right: 20px;
   }
+  .section__theme .Bloc__theme .box__menu {
+    width: 350px;
+  }
 }
 .loading {
   display: flex;
