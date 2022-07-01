@@ -125,7 +125,6 @@ header .logo__ohmyfood .logo {
 }
 .container__footer .ohmyfood__footer a {
   padding: 5px 0 5px 10px;
-  font-size: 0.9em;
   color: white;
 }
 .container__footer .ohmyfood__footer .footer__list {
@@ -136,16 +135,11 @@ header .logo__ohmyfood .logo {
   display: flex;
   align-items: center;
   padding-right: 10px;
-  font-size: 0.9em;
   color: white;
 }
 .container__footer .ohmyfood__footer .footer__list p {
   margin: 0;
-  font-size: 0.9em;
   color: white;
-}
-.container__footer .ohmyfood__footer #size {
-  font-size: 0.8em;
 }
 
 @media (min-width: 992px) {

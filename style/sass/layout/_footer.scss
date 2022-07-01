@@ -20,7 +20,7 @@
         flex-direction: column;
         a{
             padding: 5px 0 5px 10px;
-            @include font-size-color-footer;
+            @include color-footer;
         }
         .footer__list{
             display: flex;
@@ -29,15 +29,12 @@
                 display: flex;
                 align-items: center;
                 padding-right: 10px;
-                @include font-size-color-footer;
+                @include color-footer;
             }    
             p{
                 margin: 0;
-                @include font-size-color-footer; 
+                @include color-footer; 
             }               
-        }
-        #size{
-            font-size: 0.8em;
         }
     }
 }
