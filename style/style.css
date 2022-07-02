@@ -28,7 +28,7 @@ body {
   margin: 0;
 }
 
-h1 {
+h1, h2 {
   font-size: 1.7em;
   font-weight: bold;
 }
@@ -37,8 +37,8 @@ h1 {
   font-family: "Shrikhand", cursive;
 }
 
-h2, h3 {
-  font-size: 0.9em;
+h3 {
+  font-size: 1em;
 }
 
 a {
