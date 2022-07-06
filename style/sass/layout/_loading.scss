@@ -8,7 +8,6 @@
     height: 100vh;    
     z-index: 1;
     top: -100vh;
-
 }
 
 .loading::after {
@@ -21,7 +20,6 @@
     border-radius: 50%;
     animation: loading 4s linear;
     opacity: 1;
-
 }
 
 
@@ -29,9 +27,8 @@
     0%{
         transform: rotate(1turn);
         opacity: 1;
-        background-color: rgba(255, 255, 255, 0.055);
         position: inherit;
-        top: 33vh
+        top: 33vh;
     }
     100%{
         opacity: 0;

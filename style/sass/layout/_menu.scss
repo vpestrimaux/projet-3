@@ -59,54 +59,25 @@
         .one{            
             animation: menu__appear;            
             animation-duration: 1s;
-            animation-timing-function: cubic-bezier(.18,.56,.93,1.13);
-            
+            animation-delay: 0.2s;
         } 
         .two{            
             animation: menu__appear;            
             animation-duration: 1.2s;
-            animation-timing-function: cubic-bezier(.14,-0.39,.83,1.23);
+            animation-delay: 0.3s;
         }
         .three{            
             animation: menu__appear;
             animation-duration: 1.4s;
-            animation-timing-function: cubic-bezier(.14,-0.39,.83,1.33);
+            animation-delay: 0.4s;
+            
         }
         .three_bis{            
             animation: menu__appear;
-            animation-duration: 1.5s;
-            animation-timing-function: cubic-bezier(.14,-0.39,.83,1.33);
-        }
-        .four{                     
-            animation: menu__appear;            
             animation-duration: 1.6s;
-            animation-timing-function: cubic-bezier(.18,.56,.93,1.13);
-        } 
-        .five{            
-            animation: menu__appear;            
-            animation-duration: 1.8s;
-            animation-timing-function: cubic-bezier(.14,-0.39,.83,1.23);
-        }
-        .six{            
-            animation: menu__appear;            
-            animation-duration: 2s;
-            animation-timing-function: cubic-bezier(.14,-0.39,.83,1.33);
-        } 
-        .seven{            
-            animation: menu__appear;            
-            animation-duration: 2.2s;
-            animation-timing-function: cubic-bezier(.18,.56,.93,1.13);
-        } 
-        .eight{            
-            animation: menu__appear;            
-            animation-duration: 2.4s;
-            animation-timing-function: cubic-bezier(.14,-0.39,.83,1.23);
-        }
-        .nine{            
-            animation: menu__appear;            
-            animation-duration: 2.6s;
-            animation-timing-function: cubic-bezier(.14,-0.39,.83,1.33);
-        }    
+            animation-delay: 0.5s;
+            
+        }  
         .box__menu{
             display: flex;
             flex-direction: column;
@@ -131,7 +102,7 @@
                 margin-right: 60px;
             }
             &:hover .text__box__menu .slide__menu{                
-                transition: all 2s;                    
+                transition: all 1.5s;                    
                 text-align: right;                
                 opacity: 1;
                 right: 0px;                
